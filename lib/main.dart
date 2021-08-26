@@ -45,48 +45,14 @@ class _Home extends State<Home>{
                 ],
                 elevation: 10.0
             ),
-            body: new Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                    Expanded(
-                        child: Container(
-                            color: Colors.blueGrey,
-                            child: Text("data"),
-                        )
-                    ),
-                    SizedBox(height: 20.0,),
-                    Expanded(
-                        flex: 2,
-                        child: Container(
-                            color: Colors.blue,
-                            child: Text("data1"),
-                        )
-                    ),
-                    SizedBox(height: 20.0,),
-                    Expanded(
-                        flex: 3,
-                        child: Container(
-                            color: Colors.amber,
-                            child: Text("data2"),
-                        )
-                    ),
-                    SizedBox(height: 20.0,),
-                    Expanded(
-                        flex: 2,
-                        child: Container(
-                            color: Colors.blue,
-                            child: Text("data1"),
-                        )
-                    ),
-                    SizedBox(height: 20.0,),
-                    Expanded(
-                        flex: 4,
-                        child: Container(
-                            color: Colors.blue,
-                            child: Text("data1"),
-                        )
-                    )
-                ],
+            body: Center(
+              widthFactor: 30.0,
+              heightFactor: 30.0,
+                child: ElevatedButton(
+                  child: Text("go to page 1"),
+                  onPressed: ()=>{
+
+                  },),
             ),
         );
     }
